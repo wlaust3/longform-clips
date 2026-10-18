@@ -79,6 +79,13 @@ longform-clips export --out out/ --candidate 2     # -> out/clips/clip_2.mp4
 Useful flags: `--model tiny|base|small|medium|large-v3`, `--device cpu|cuda`,
 `--embedder hash` (offline, weaker), `--transcript transcript.json` (skip STT), `--seed`.
 
+## Performance
+
+Not yet measured (pre-alpha). Milestone 1 target: `analyze` on a 30-minute video with
+`--model small` on a 4-core CPU laptop in under 45 minutes; `preview` + `export` under 5 minutes.
+The measured numbers will be recorded here. Use `--model tiny` or `base` for faster, rougher
+transcripts, or `--device cuda` with a GPU.
+
 ## Roadmap
 
 - **Milestone 1** ([docs/MILESTONE-1.md](docs/MILESTONE-1.md)): one video in, 3-5 candidate clips out, export one.
