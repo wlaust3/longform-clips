@@ -70,3 +70,15 @@ languages beyond what Whisper handles by default.
 All boxes above are checked, CI is green on `main`, README usage matches actual behavior, and
 at least one real podcast or interview video has been run end to end by hand with the result
 noted in the PR description (real Whisper + MiniLM, not fakes).
+
+## Tasks
+
+- [ ] #2 Ingest: local file or URL via yt-dlp, ffmpeg checks
+- [ ] #3 Transcribe: faster-whisper with word timestamps
+- [ ] #4 Chunk + embed: sentences, ~12 s chunks, MiniLM embeddings
+- [ ] #5 Boundary detection: cosine valleys / TextTiling depth
+- [ ] #6 Candidate selection: score and pick 3-5 non-overlapping 30-60 s moments
+- [ ] #7 Captions: word timings to ASS subtitles
+- [ ] #8 Render: FFmpeg cut, center-crop 9:16, burn captions
+- [ ] #9 CLI + preview: analyze, preview, export commands
+- [ ] #10 Tests, CI and performance notes
